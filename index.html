@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="input.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -14,7 +16,7 @@
     }
 
     .noto {
-        font-family: 'noto', 'sans-serif';
+        font-family: 'Noto Serif', serif;
     }
 </style>
 
@@ -29,17 +31,17 @@
             </div>
         </div>
     </nav>
-    <header class="bg-[#F7EEC6] lg:flex lg:justify-between ">
+    <header class="bg-[#F7EEC6] lg:flex lg:justify-between pt-3">
         <div id="one" class="p-2 w-[70%] md:w-[40vw] lg:w-[20vw] flex justify-around lg:justify-evenly">
             <img src="Assets/Header/options.png" alt="" class="h-5">
             <img src="Assets/Header/mom's-belief-beta.png" alt="" class="h-8">
         </div>
 
         <div id="two" class="hidden lg:flex lg:justify-between w-[40vw] inter leading-10 text-sm text-[#151B4A]">
-            <span>Programs</span>
-            <span>New</button> Emotional Intelligence</span>
-            <span>Assessment</span>
-            <span>Centres</span>
+            <a href="programs.html">Programs</a>
+            <a href="emotional_intelligence.html">Emotional Intelligence</a>
+            <a href="assessment.html">Assessment</a>
+            <a href="centres.html">Centres</a>
         </div>
 
         <div id="three" class="hidden lg:flex lg:justify-start w-[13vw]">
@@ -48,7 +50,7 @@
         </div>
     </header>
     <!-- ----------------navbar and header completed------------------------ -->
-    <div id="firstBox" class="bg-[#FFF6CC] flex flex-col pt-10 lg:pt-16 lg:rounded-b-[30rem]">
+    <section id="heroElement" class="bg-[#FFF6CC] flex flex-col pt-10 lg:pt-16 lg:rounded-b-[30rem]">
         <div class="bg-[#FFF6CC] flex flex-col justify-center items-center text-center h-[53vh] lg:rounded-b-[10rem]">
             <div class="bg-[#FFF6CC] lg:rounded-b-full flex flex-col justify-center items-center w-[100%] mb-4 leading-6 "
                 id="one">
@@ -58,7 +60,7 @@
                 </div>
                 <div class="">
                     <h1
-                        class="noto font-semibold text-[25px] lg:text-[45px] leading-[35px] lg:leading-[60px] text-[#151B4A] w-[80vw] lg:w-[48vw]">
+                        class="noto font-semibold text-[25px] lg:text-[40px] leading-[35px] lg:leading-[60px] text-[#151B4A] w-[80vw] lg:w-[48vw]">
                         We Empower Mom's Beliefs &
                         Enable Child's Growth.</h1>
                 </div>
@@ -75,8 +77,7 @@
                 <div>
                     <h1
                         class="inter mt-4 font-normal text-[14px] lg:text-[16px] leading-[23px] lg:leading-[26px] text-[#4E516C] lg:w-[23vw]">
-                        Or Just <u>take a free
-                            assessment</u> to see how is the
+                        Or Just <u> <a href="">take a free assessment</a> </u> to see how is the
                         growth of your child.</h1>
                 </div>
             </div>
@@ -86,40 +87,42 @@
             <img src="Assets/father.png" alt="" class="h-40 mx-2 lg:h-60">
             <img src="Assets/mother.png" alt="" class="h-32 mx-2 lg:h-60">
         </div>
-        <div class="bg-white h-[12vh] lg:hidden">
+        <div class="bg-white h-[12vh] lg:hidden fixed bottom-0 left-0 right-0 z-50">
             <div class="bg-black text-white rounded-t-md flex justify-between">
-                <div class="">
+                <div>
                     <img src="Assets/Program.png" alt="" class="h-14 p-2">
                 </div>
                 <img src="Assets/line.png" alt="" class="h-16 p-2">
-                <div class="">
+                <div>
                     <img src="Assets/Centres.png" alt="" class="h-14 p-2">
                 </div>
                 <img src="Assets/line.png" alt="" class="h-16 p-2">
-                <div class="">
+                <div>
                     <img src="Assets/Assessment.png" alt="" class="h-14 p-2">
                 </div>
                 <img src="Assets/line.png" alt="" class="h-16 p-2">
-                <div class="">
+                <div>
                     <img src="Assets/User.png" alt="" class="h-14 p-2">
                 </div>
             </div>
-
         </div>
-    </div>
 
-    <div id="" class="bg-white flex flex-col justify-center items-center text-center lg:mt-6">
-        <div class="flex flex-col lg:items-center lg:justify-center bg-[#E4F7F3]">
+
+    </section>
+
+    <section class="bg-white flex flex-col justify-center items-center text-center mt-6">
+        <section class="flex flex-col lg:items-center lg:justify-center bg-[#E4F7F3] ">
             <h1
-                class="noto font-medium text-[20px] lg:text-[32px] leading-[33px] lg:leading-[55px] text-[#151B4A] xl:w-[90vw] text-center">
+                class="noto font-medium text-[20px] lg:text-[32px] leading-[33px] lg:leading-[55px] text-[#151B4A] xl:w-[90vw] text-center mt-20">
                 Customisable Expert Curated Programs
             </h1>
             <p class="hidden lg:flex lg:text-center lg:w-[45vw] font-normal text-[18px] leading-[27px] text-[#4E516C]">
                 These programs work on applied neurological science. Our experts have curated each program with the
                 knowledge and insights from decades of experience.
             </p>
-        </div>
-        <div class="bg-[#E4F7F3] flex flex-col lg:flex-row items-center noto w-[90vw] text-[#151B4A] mx-auto pt-10 pb-5 rounded-b-xl"
+        </section>
+        <section
+            class="bg-[#E4F7F3] flex flex-col lg:flex-row items-center noto w-[90vw] text-[#151B4A] mx-auto pt-10 pb-5 rounded-b-xl"
             id="secondBox">
             <div class="flex flex-col justify-center items-center" id="childOneDiv">
                 <div class="flex justify-center mt-6">
@@ -177,9 +180,9 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div id="thirdBox"
+        <section id="thirdBox"
             class="bg-white w-[90vw] mx-auto lg:flex lg:flex-col lg:items-center lg:justify-center lg:text-center">
             <div class="my-12 flex flex-col lg:items-center">
                 <h1 class="noto font-semibold text-[20px] leading-[33px] text-[#151B4A] lg:hidden">Who Are We?</h1>
@@ -193,16 +196,19 @@
             </div>
             <img src="Assets/stepsMobile.png" alt="" class="md:hidden">
             <img src="Assets/stepsDesktop.png" alt="" class="hidden md:block xl:w-[80vw] ">
-        </div>
+        </section>
 
 
-        <div id="fourthBox" class="bg-[#E4F7F3] w-[90vw] mx-auto mt-12 flex flex-col items-center">
+        <section id="fourthBox" class="bg-[#E4F7F3] w-[90vw] mx-auto mt-12 flex flex-col items-center">
             <div class="w-[75vw] text-center my-6" id="a">
-                <h1 class="noto font-medium text-[20px] leading-[33px] text-[#151B4A]">Got More Questions?</h1>
-                <h1 class="noto font-medium text-[20px] leading-[33px] text-[#151B4A]">Talk To Our Experts</h1>
-                <p class="inter font-[400px] text-[16px] leading-[22px] text-[#4E516C]">These programs work on applied
+                <h1 class="noto text-[20px] lg:text-[32px] leading-[33px] lg:leading-[55px] text-[#151B4A]">Got More Questions?</h1>
+                <h1 class="noto text-[20px] lg:text-[32px] leading-[33px] lg:leading-[55px] text-[#151B4A]">Talk To Our Experts</h1>
+                <p class="inter text-[16px]  leading-[22px] text-[#4E516C] lg:max-w-[35vw] mx-auto">These programs work on applied
                     neurological science. Our experts have curated each program with the knowledge </p>
             </div>
+            
+            
+            
 
             <div class="bg-transparent lg:bg-white my-10">
 
@@ -267,11 +273,11 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="hidden lg:flex lg:flex-col">
-            <h1 class="noto font-medium text-[32px] leading-[55px] text-[#151B4A]">Plans & Packages</h1>
-            <p class="inter font-normal text-[18px] leading-[30px] text-[#4E516C] w-[43vw]">These programs work on
+        <section class="hidden lg:flex lg:flex-col">
+            <h1 class="noto font-medium text-[32px] leading-[55px] text-[#151B4A] mt-10">Plans & Packages</h1>
+            <p class="inter font-normal text-base lg:text-[18px] leading-[30px] text-[#4E516C] mb-10 ">These programs work on
                 applied neurological science. Our experts have curated each program with the knowledge </p>
             <div class="flex flex-col">
                 <div class="flex flex-row justify-between w-[65vw]">
@@ -318,10 +324,10 @@
                 <button class="bg-[#125E50] py-2 px-[10px] rounded-full text-[#FFFFFF]">Enroll now</button>
                 <p class="inter font-normal text-sm leading-6 text-[#4E516C]">Get 2 Week Free Access</p>
             </div>
-        </div>
-    </div>
+        </section>
+    </section>
 
-    <div id="footer"
+    <section id="footer"
         class="bg-[#E4F7F3] w-[80vw] mx-auto mt-12 flex flex-col lg:flex-row items-center lg:items-start lg:space-x-24">
         <div class="flex flex-col justify-center items-center lg:items-start my-7 lg:w-[30vw]" id="footerOne">
             <img src="Assets/Header/mom's-belief-beta.png" alt=""
@@ -371,20 +377,20 @@
             </div>
         </div>
 
-        
-            <img src="Assets/childWithGlobe.png" alt=""
-                class="ml-[70vw] lg:ml-[90vw] h-[47.5px] lg:h-[144.52px] lg:w-[169.78px] w-[55.81px] lg:mt-32">
-            <img src="Assets/blueLine.png" alt="" class="w-[100vw] mt-2 md:hidden">
 
-            <p
-                class="inter font-normal text-[8px] size-2 leading-[11px] text-[#4E516C] w-full my-4 text-center lg:mt-96 md:hidden">
-                Copyright © 2022
-                Mom’s Belief. A unit of Rays of Belief Pvt Ltd.
-            </p>
-        
+        <img src="Assets/childWithGlobe.png" alt=""
+            class="ml-[70vw] lg:ml-[90vw] h-[47.5px] lg:h-[144.52px] lg:w-[169.78px] w-[55.81px] lg:mt-32">
+        <img src="Assets/blueLine.png" alt="" class="w-[100vw] mt-2 md:hidden">
 
-    </div>
-    </div>
+        <p
+            class="inter font-normal text-[8px] size-2 leading-[11px] text-[#4E516C] w-full my-4 text-center lg:mt-96 md:hidden">
+            Copyright © 2022
+            Mom’s Belief. A unit of Rays of Belief Pvt Ltd.
+        </p>
+
+
+    </section>
+
 </body>
 
 </html>
